@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "Postgres2022!"
+      POSTGRES_USER: "admin"
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
